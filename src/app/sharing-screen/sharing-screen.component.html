@@ -2,10 +2,17 @@
     <div class="col-12">
         <div class="row">
             <div class="col-8">
-                USER'S SCREEN
+                <div class="video-container">
+                    <video #videoElement autoplay></video>
+                </div>
             </div>
             <div class="col-4">
-                USERS
+                <div class="user-list">
+                    <h2>Online Users</h2>
+                    <ul>
+                        <li *ngFor="let user of onlineUsers">{{ user }}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
