@@ -1,12 +1,13 @@
 <div id="headerMeetApp">
     <!-- As a link -->
-    <nav class="navbar navbar-light bg-dark headNav">
+    <nav class="navbar navbar-light headNav" style="background-color: rgb(214, 234, 139);">
         <div class="col-12">
             <div class="row">
                 <div class="col-3"><a class="navbar-brand" href="#">Meet App</a></div>
                 <div class="col-3"></div>
                 <div class="col-3"></div>
-                <div class="col-3"><span class="material-icons">stop_screen_share</span></div>
+                <div class="col-3" style="color: rgb(16, 15, 15);" *ngIf="screenShareFlag"><span (click)="handleScreenSharing()"  class="material-icons">stop_screen_share</span></div>
+                <div class="col-3" style="color: rgb(83, 8, 8);"  *ngIf="!screenShareFlag"><span (click)="handleScreenSharing()" class="material-icons">screen_share</span></div>
             </div>
         </div>
     </nav>

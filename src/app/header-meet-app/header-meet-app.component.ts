@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderMeetAppComponent {
 
+  screenShareFlag = true;
+
+  handleScreenSharing(){
+    this.screenShareFlag = !this.screenShareFlag;
+  }
+
 }
